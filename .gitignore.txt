@@ -76,6 +76,7 @@ _Chutzpah*
 ipch/
 *.aps
 *.ncb
+*.opendb
 *.opensdf
 *.sdf
 *.cachefile
@@ -137,7 +138,7 @@ publish/
 # Publish Web Output
 *.[Pp]ublish.xml
 *.azurePubxml
-# TODO: Comment the next line if you want to checkin your web deploy settings 
+# TODO: Comment the next line if you want to checkin your web deploy settings
 # but database connection strings (with potential passwords) will be unencrypted
 *.pubxml
 *.publishproj
@@ -151,16 +152,20 @@ publish/
 # Uncomment if necessary however generally it will be regenerated when needed
 #!**/packages/repositories.config
 
-# Windows Azure Build Output
+# Microsoft Azure Build Output
 csx/
 *.build.csdef
 
-# Windows Azure Emulator
-efc/
-rfc/
+# Microsoft Azure Emulator
+ecf/
+rcf/
+
+# Microsoft Azure ApplicationInsights config file
+ApplicationInsights.config
 
 # Windows Store app package directory
 AppPackages/
+BundleArtifacts/
 
 # Visual Studio cache files
 # files ending in .cache can be ignored
@@ -170,7 +175,6 @@ AppPackages/
 
 # Others
 ClientBin/
-[Ss]tyle[Cc]op.*
 ~$*
 *~
 *.dbmdl
@@ -228,61 +232,3 @@ _Pvt_Extensions
 
 # FAKE - F# Make
 .fake/
-Source/AccessPi/PIWW.AccessPi.Web/XmlComments.xml
-
-# Visual Studio 'Add As Link' files in Survey.Web
-Source/SurveyInput/PIWW.Survey.Web/Content/less/sizingVariables.less
-Source/SurveyInput/PIWW.Survey.Web/Content/less/fonts.less
-Source/SurveyInput/PIWW.Survey.Web/Content/less/labels.less
-Source/AccessPi/PIWW.AccessPi.Web/ClientSideApp/**/*.js
-Source/AccessPi/PIWW.AccessPi.Web/ClientSideApp/**/*.js.map
-Source/AccessPi/PIWW.AccessPi.Web/typings/
-*.jfm
-Source/AccessPi/PIWW.AccessPi.Web/phantomjs.exe
-Source/AccessPi/PIWW.AccessPi.Web/Content/font-awesome.css
-Source/AccessPi/PIWW.AccessPi.Web/Content/font-awesome.min.css
-Source/AccessPi/PIWW.AccessPi.Web/fonts/FontAwesome.otf
-Source/AccessPi/PIWW.AccessPi.Web/fonts/fontawesome-webfont.eot
-Source/AccessPi/PIWW.AccessPi.Web/fonts/fontawesome-webfont.svg
-Source/AccessPi/PIWW.AccessPi.Web/fonts/fontawesome-webfont.ttf
-Source/AccessPi/PIWW.AccessPi.Web/fonts/fontawesome-webfont.woff
-Source/AccessPi/PIWW.AccessPi.Web/fonts/fontawesome-webfont.woff2
-Source/AccessPi/PIWW.AccessPi.Web/Content/LivingStyleGuide/output/
-Source/AccessPI/PIWW.AccessPi.Web/Content/LivingStyleGuide/**/*.css
-*.dll
-*.pdb
-PLI/PLI.WebCore/bin/Debug/ClosedXML.xml
-PLI/PLI.WebCore/bin/
-PLI/PLI.Core/bin/
-PLI/PLI.AdminPortal/obj/
-PLI/PLI.Core/obj/Debug/Core.csproj.FileListAbsolute.txt
-PLI/PLI.Core/obj/Debug/
-PLI/PLI.AdminPortal/bin/ClosedXML.xml
-PLI/PLI.AdminPortal/bin/
-PLI/PLI.WebCore/obj/Debug/
-*.suo
-PLI/PLI.UserPortal/bin/
-PLI/PLI.UserPortal/obj/
-PLI/PLI.AdminPortal/UpgradeLog.htm
-PLI/PLI.UserPortal/UpgradeLog.htm
-*.nupkg
-PLI/PLI.AdminPortal/AdminPortal.csproj.user
-PLI/PLI.UserPortal/UserPortal.csproj.user
-PLI/PLI.UserPortal/Backup/
-PLI/PLI.UserPortal/UpgradeLog2.htm
-PLI/PLI.UserPortal/UpgradeLog3.htm
-PLI/PLI.Core/obj/
-PLI/PLI.WebCore/obj/Release/
-
-# Don't include XMLComments.XML for PI.Core as its generated
-/Source/PI.Core/PI.Core.API/XMLComments.xml
-
-# Do not include log and cache files
-ML/JobTitleMatch/JobTitleMatch/log/
-# Byte-compiled / optimized / DLL files
-ML/JobTitleMatch/JobTitleMatch/jtlibs/__pycache__/
-__pycache__/
-log/
-
-/Source/Common/PIWW.ScoreAssessment.Task.BACK
-/Source/Common/PIWW.ScoreAssessment.Task/.vscode
